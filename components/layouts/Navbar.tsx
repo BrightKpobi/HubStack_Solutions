@@ -24,8 +24,8 @@ export default function Navbar() {
         {/* Logo */}
         <h1 className="text-2xl font-bold text-white">HubStack</h1>
 
-        {/* Desktop Menu */}
-        <div className="hidden md:flex gap-8 text-white items-center">
+        {/* Desktop Menu - Center */}
+        <div className="hidden md:flex flex-1 justify-center gap-8 text-white items-center">
           <Link href="/" className="hover:text-blue-300 transition">
             HOME
           </Link>
@@ -35,11 +35,13 @@ export default function Navbar() {
           <Link href="/services" className="hover:text-blue-300 transition">
             SERVICES
           </Link>
+        </div>
 
-          {/* CONTACT POPUP */}
+        {/* Contact Button - Right */}
+        <div className="hidden md:flex items-center">
           <Dialog>
             <DialogTrigger asChild>
-              <Button className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:via-purple-500 hover:to-blue-500 transition-all px-6 py-3 rounded-full font-semibold text-white shadow-lg shadow-blue-500/30">
+              <Button className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:via-purple-500 hover:to-blue-500 transition-all px-6 py-3 rounded-full font-semibold text-white ">
                 CONTACT
               </Button>
             </DialogTrigger>
@@ -55,7 +57,6 @@ export default function Navbar() {
               </DialogHeader>
 
               <form className="space-y-6 mt-4">
-                {/* Name */}
                 <div className="space-y-2">
                   <Label htmlFor="name" className="text-gray-700 font-medium">
                     Name
@@ -67,7 +68,6 @@ export default function Navbar() {
                   />
                 </div>
 
-                {/* Email */}
                 <div className="space-y-2">
                   <Label htmlFor="email" className="text-gray-700 font-medium">
                     Email
@@ -80,7 +80,6 @@ export default function Navbar() {
                   />
                 </div>
 
-                {/* Message */}
                 <div className="space-y-2">
                   <Label
                     htmlFor="message"
@@ -96,10 +95,9 @@ export default function Navbar() {
                   />
                 </div>
 
-                {/* Submit */}
                 <Button
                   type="submit"
-                  className="w-full h-12 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white font-semibold text-lg hover:from-pink-500 hover:via-purple-500 hover:to-blue-500 rounded-lg shadow-md transition-all"
+                  className="w-full h-12 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white font-semibold text-lg hover:from-pink-500 hover:via-purple-500 hover:to-blue-500 rounded-full transition-all"
                 >
                   Send Message
                 </Button>
@@ -118,7 +116,7 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Dropdown Menu */}
+      {/* Mobile Dropdown */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -151,7 +149,7 @@ export default function Navbar() {
               SERVICES
             </Link>
 
-            {/* CONTACT POPUP MOBILE */}
+            {/* Mobile Contact Popup */}
             <Dialog>
               <DialogTrigger asChild>
                 <Button className="w-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white hover:from-pink-500 hover:via-purple-500 hover:to-blue-500">
@@ -170,7 +168,6 @@ export default function Navbar() {
                 </DialogHeader>
 
                 <form className="space-y-6 mt-4">
-                  {/* Name */}
                   <div className="space-y-2">
                     <Label
                       htmlFor="name-mobile"
@@ -185,7 +182,6 @@ export default function Navbar() {
                     />
                   </div>
 
-                  {/* Email */}
                   <div className="space-y-2">
                     <Label
                       htmlFor="email-mobile"
@@ -201,7 +197,6 @@ export default function Navbar() {
                     />
                   </div>
 
-                  {/* Message */}
                   <div className="space-y-2">
                     <Label
                       htmlFor="message-mobile"
@@ -217,10 +212,9 @@ export default function Navbar() {
                     />
                   </div>
 
-                  {/* Submit */}
                   <Button
                     type="submit"
-                    className="w-full h-12 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white font-semibold text-lg hover:from-pink-500 hover:via-purple-500 hover:to-blue-500 rounded-lg shadow-md transition-all"
+                    className="w-full h-12 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white font-semibold text-lg hover:from-pink-500 hover:via-purple-500 hover:to-blue-500 rounded-full transition-all"
                   >
                     Send Message
                   </Button>
