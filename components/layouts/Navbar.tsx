@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation"; // 👈 import pathname hook
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -75,6 +76,7 @@ function ContactForm({ idPrefix = "" }: { idPrefix?: string }) {
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname(); // 👈 get current pathname
 
   const menuItems = [
     { href: "/", label: "HOME" },
@@ -96,7 +98,11 @@ export default function Navbar() {
             <Link
               key={item.href}
               href={item.href}
-              className="hover:text-blue-300 transition-colors"
+              className={`transition-colors ${
+                pathname === item.href
+                  ? "text-blue-300 font-semibold underline underline-offset-4"
+                  : "hover:text-blue-300"
+              }`}
             >
               {item.label}
             </Link>
@@ -154,7 +160,11 @@ export default function Navbar() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="block py-2 px-3 rounded-lg hover:bg-white/10 transition"
+                  className={`block py-2 px-3 rounded-lg transition ${
+                    pathname === item.href
+                      ? "bg-white/20 text-blue-200 font-semibold"
+                      : "hover:bg-white/10"
+                  }`}
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}
