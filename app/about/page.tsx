@@ -29,11 +29,12 @@ export default function About() {
           viewport={{ once: true }}
           className="text-lg text-gray-300 leading-relaxed"
         >
-          Hi 👋 I’m <span className="font-bold text-blue-400">HubStack</span>, a
-          freelance web developer. I build modern, responsive, and scalable
-          websites using <span className="text-blue-400">Next.js</span>,{" "}
+          Hi 👋 my name is Bright Kpobi, a freelance web developer. I build
+          modern, responsive, and scalable websites using
+          {/* {" "}
+          <span className="text-blue-400">Next.js</span>,{" "}
           <span className="text-blue-400">React</span>, and{" "}
-          <span className="text-blue-400">Tailwind CSS</span>.
+          <span className="text-blue-400">Tailwind CSS</span>. */}
         </motion.p>
       </section>
 
@@ -95,7 +96,7 @@ export default function About() {
           viewport={{ once: true }}
           className="text-center backdrop-blur-lg bg-white/10 border border-white/20 rounded-2xl p-10 shadow-lg max-w-2xl"
         >
-          <h2 className="text-3xl font-bold mb-4">Let’s Work Together 🚀</h2>
+          <h2 className="text-3xl font-bold mb-4">Let’s Work Together </h2>
           <p className="text-gray-200 mb-6">
             Have an idea or project in mind? I’d love to help bring it to life
             with clean, modern, and scalable solutions.

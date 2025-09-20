@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation"; // 👈 import pathname hook
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -29,7 +29,7 @@ function ContactForm({ idPrefix = "" }: { idPrefix?: string }) {
         </Label>
         <Input
           id={`${idPrefix}name`}
-          placeholder="John Doe"
+          placeholder="Enter your name here..."
           className="h-12 rounded-lg border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
         />
       </div>
@@ -44,7 +44,7 @@ function ContactForm({ idPrefix = "" }: { idPrefix?: string }) {
         <Input
           id={`${idPrefix}email`}
           type="email"
-          placeholder="you@example.com"
+          placeholder="Enter your email here..."
           className="h-12 rounded-lg border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
         />
       </div>
@@ -113,7 +113,7 @@ export default function Navbar() {
         <div className="hidden md:flex items-center">
           <Dialog>
             <DialogTrigger asChild>
-              <Button className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:via-purple-500 hover:to-blue-500 transition-all px-6 py-3 rounded-full font-semibold text-white shadow-md">
+              <Button className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:via-purple-500 hover:to-blue-500 transition-all px-6 py-3 rounded-full font-semibold text-white ">
                 CONTACT
               </Button>
             </DialogTrigger>
@@ -152,7 +152,7 @@ export default function Navbar() {
             exit={{ opacity: 0, y: -15 }}
             transition={{ duration: 0.25, ease: "easeOut" }}
             className="absolute left-1/2 top-full mt-2 w-[90%] -translate-x-1/2 md:hidden 
-                 bg-gradient-to-b from-blue-600/90 to-blue-900/95 backdrop-blur-xl 
+                 bg-gradient-to-b from-blue-600 to-blue-900 backdrop-blur-xl 
                  border border-white/10 shadow-2xl rounded-2xl px-6 py-6 space-y-6"
           >
             <div className="flex flex-col space-y-4 text-lg font-medium text-white">

@@ -25,13 +25,13 @@ const projects = [
     link: "#",
   },
   {
-    title: "E-commerce Platform",
-    desc: "Full-stack shop with payments and CMS.",
+    title: "University Website",
+    desc: "Full-stack ",
     link: "#",
   },
   {
-    title: "SaaS Dashboard",
-    desc: "Analytics dashboard with authentication and charts.",
+    title: "A Church Website",
+    desc: "Analytics dashboard with authentication ",
     link: "#",
   },
 ];
@@ -83,16 +83,7 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
           className="text-gray-300"
-        >
-          Welcome to Our Company – a technology firm that offers a wide range of
-          web, mobile, and software application development services to clients
-          across various industries. Our team of highly skilled and experienced
-          developers leverage the latest cutting-edge technologies to create
-          bespoke solutions tailored to meet our clients specific needs. Our
-          services span across the entire technology stack, from front-end
-          development to back-end infrastructure, ensuring that we deliver
-          comprehensive and robust solutions.
-        </motion.p>
+        ></motion.p>
         <Link
           href="/about"
           className="inline-block mt-6 px-6 py-3 rounded-xl bg-white/10 border border-white/20 hover:bg-white/20 transition"

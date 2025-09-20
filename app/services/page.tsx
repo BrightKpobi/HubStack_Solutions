@@ -10,22 +10,22 @@ const services = [
     title: "Web Development",
     desc: "Responsive, SEO-friendly, and modern websites using Next.js, React, and Tailwind CSS.",
   },
-  {
-    title: "API Integration",
-    desc: "Seamlessly connect applications with RESTful APIs, GraphQL, and third-party services.",
-  },
-  {
-    title: "UI/UX Design",
-    desc: "Clean, modern, and user-friendly designs focused on usability and aesthetics.",
-  },
+  // {
+  //   title: "API Integration",
+  //   desc: "Seamlessly connect applications with RESTful APIs, GraphQL, and third-party services.",
+  // },
+  // {
+  //   title: "UI/UX Design",
+  //   desc: "Clean, modern, and user-friendly designs focused on usability and aesthetics.",
+  // },
   {
     title: "E-commerce Solutions",
     desc: "Custom online stores with payments, authentication, and admin dashboards.",
   },
-  {
-    title: "SaaS Platforms",
-    desc: "Scalable SaaS applications with dashboards, charts, and authentication.",
-  },
+  // {
+  //   title: "SaaS Platforms",
+  //   desc: "Scalable SaaS applications with dashboards, charts, and authentication.",
+  // },
   {
     title: "Website Optimization",
     desc: "Improve speed, performance, and SEO to rank higher and load faster.",
@@ -35,27 +35,32 @@ const services = [
 const pricingPlans = [
   {
     title: "Basic",
-    price: "$499",
-    features: ["Landing Page", "Responsive Design", "SEO Setup", "1 Revision"],
+    price: "¢5,000 – 22,500",
+    features: [
+      "Business Website",
+      "Responsive Design",
+      "5–10 pages",
+      // "1 Revision",
+    ],
   },
   {
     title: "Standard",
-    price: "$999",
+    price: "¢7,500 – 45,000",
     features: [
-      "5 Pages Website",
-      "Custom Design",
+      // "5 Pages Website",
+      "NGO Website",
       "SEO + Analytics",
-      "3 Revisions",
+      // "3 Revisions",
     ],
   },
   {
     title: "Premium",
-    price: "$1999",
+    price: "¢45,000 – 300,000+ ",
     features: [
-      "Full Website / SaaS",
-      "Advanced Features",
+      " E-Commerce Website",
+      "Real Estate / Marketplace",
       "Performance Optimization",
-      "Unlimited Revisions",
+      // "Unlimited Revisions",
     ],
   },
 ];
@@ -129,7 +134,7 @@ export default function Service() {
             >
               <div>
                 <h3 className="text-2xl font-semibold mb-3">{plan.title}</h3>
-                <p className="text-4xl font-bold text-blue-400 mb-6">
+                <p className="text-2xl font-bold text-blue-400 mb-6">
                   {plan.price}
                 </p>
                 <ul className="space-y-2 text-gray-300">
