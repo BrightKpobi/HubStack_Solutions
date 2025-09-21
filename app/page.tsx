@@ -83,7 +83,11 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
           className="text-gray-300"
-        ></motion.p>
+        >
+          HubStack is my personal portfolio presented as a brand — a space where
+          I showcase my work, skills, and projects while building a professional
+          identity.
+        </motion.p>
         <Link
           href="/about"
           className="inline-block mt-6 px-6 py-3 rounded-xl bg-white/10 border border-white/20 hover:bg-white/20 transition"

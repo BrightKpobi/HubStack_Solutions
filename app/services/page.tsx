@@ -10,22 +10,12 @@ const services = [
     title: "Web Development",
     desc: "Responsive, SEO-friendly, and modern websites using Next.js, React, and Tailwind CSS.",
   },
-  // {
-  //   title: "API Integration",
-  //   desc: "Seamlessly connect applications with RESTful APIs, GraphQL, and third-party services.",
-  // },
-  // {
-  //   title: "UI/UX Design",
-  //   desc: "Clean, modern, and user-friendly designs focused on usability and aesthetics.",
-  // },
+
   {
     title: "E-commerce Solutions",
     desc: "Custom online stores with payments, authentication, and admin dashboards.",
   },
-  // {
-  //   title: "SaaS Platforms",
-  //   desc: "Scalable SaaS applications with dashboards, charts, and authentication.",
-  // },
+
   {
     title: "Website Optimization",
     desc: "Improve speed, performance, and SEO to rank higher and load faster.",
